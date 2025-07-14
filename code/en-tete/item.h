@@ -1,11 +1,12 @@
 #include <string.h>
 
+using namespace std ;
 
-class  Item {
+class Item {
 
 private:
     
-    //string nom ;
+    string nom ;
 
 public:
 
@@ -13,7 +14,7 @@ public:
     // que ce soit dans l'inventaire ou en tant que loot au sol
     // on aura d'autre truc mais pour l'instant c deja pas mal
 
-};
+} ;
 
 
 
