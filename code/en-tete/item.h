@@ -1,10 +1,11 @@
-
+#include <string.h>
 
 
 class  Item {
 
 private:
     
+    //string nom ;
 
 public:
 
