@@ -7,9 +7,13 @@ using namespace std;
 
 int main() {
     
-    Item truc ;
-    cout << "hello world" ;
+    Loot unLoot("portemonaie",1000,"un riche l'a fait tomber... \ntant pis pour lui") ;
+    Arme uneArme("Mon giga katana", 170, 2, 20,"j'ai un super gros sabre") ;
+    cout << uneArme.descrip() << endl ;
+    cout << unLoot.descrip() << endl ;
     cout << endl;
+
+
 }
 
 

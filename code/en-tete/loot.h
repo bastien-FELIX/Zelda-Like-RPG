@@ -1,4 +1,4 @@
-#include "item.h"  
+#include "arme.h"
 
 // les loots de mobs classiques ( les ptites daubes qui srvent a rien a part les vendre)
 using namespace std ;
@@ -11,7 +11,11 @@ private :
     
 public :
 
+    Loot() ;
+    Loot(string n, int moula , string desc) {
+        nom =n ; prix = moula; description = desc ; }
     int getValeur() {return prix ;}
+    string descrip () {return nom + "\n" + description ;}
 
 };
 

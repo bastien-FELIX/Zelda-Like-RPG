@@ -5,7 +5,7 @@
 using namespace std ;
     
 
-class arme : Item{
+class Arme : Item{
 
 private:
 
@@ -16,12 +16,32 @@ private:
     int force = 0 ;
     int speed = 0 ; // la vitesse peut etre faire un float pour faire un multiplicateur
     int def = 0 ;
+    string description ;
+
     
 public:
 
-    string description ;
-    string descrip () ;
+    Arme (string n , int strength , int vit, int defffe, string desc) {
+        nom = n ; force = strength ; speed = vit ; def = defffe ; description = desc ;}
+
+    Arme() {}
+
     
+    string descrip () {
+
+        string affichage = nom + "\n" ;
+        if (force != 0 ) {affichage += to_string(force) ; ;}
+        affichage +=  "\n";
+
+        if (speed != 0 ) {affichage += to_string(speed) ;}
+        affichage +=  "\n";
+
+        if (def != 0 ) {affichage += to_string(def);}
+        affichage +=  "\n";
+
+        affichage += description ;
+        return affichage ;}
+
 
 };
 
