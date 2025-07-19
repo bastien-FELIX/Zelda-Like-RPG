@@ -22,7 +22,8 @@ etape 1 : savoir ce qu'on va faire...
 
 etape 2 : 
 
-
+    le coder et le tester
+    
 
 
 
